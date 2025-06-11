@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Erreur 500</title>
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f0f0f0;
+        font-family: Arial, sans-serif;
+      }
+
+      .error-container {
+        text-align: center;
+      }
+
+      .error-code {
+        font-size: 10rem;
+        color: #e2ab14;
+        animation: fadeInOut 2s infinite;
+      }
+
+      .error-message {
+        font-size: 2rem;
+        color: #333;
+      }
+
+      .error-details {
+        font-size: 1.2rem;
+        color: #777;
+      }
+
+      @keyframes fadeInOut {
+        0%,
+        100% {
+          opacity: 0.2;
+        }
+        50% {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="error-container">
+      <h1 class="error-code">500</h1>
+      <p class="error-message">Oops! Erreur Serveur.</p>
+      <p class="error-details">
+        Désolé, mais le serveur est indisponible pour le moment, veuillez
+        rappeler plus tard.
+      </p>
+    </div>
+  </body>
+</html>

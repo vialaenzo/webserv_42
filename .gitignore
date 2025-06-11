@@ -1,0 +1,9 @@
+*.log
+*.o
+.vscode
+Session.vim
+goodweb/list/
+goodweb/main/cgi-bin/uploads-files/
+logs
+obj
+webserv

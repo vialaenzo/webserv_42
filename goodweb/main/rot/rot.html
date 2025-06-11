@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encodeur ROT-3</title>
+    <style>
+      body {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        background-color: #ffffff;
+      }
+      .top-bar {
+        width: 100%;
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 1fr;
+        color: #00ff00;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+      }
+      .top-bar a {
+        padding: 2px;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+      }
+      .container {
+        margin-top: 50px;
+      }
+      textarea {
+        width: 80%;
+        height: 100px;
+        font-size: 16px;
+      }
+      button {
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #00ff00;
+        border: 2px solid black;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #008000;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="back-btn" onclick="window.history.back();">Back</button>
+    <div class="container">
+      <h1>Encodeur ROT-3</h1>
+      <form action="../cgi-bin/rot.py" method="post">
+        <textarea name="texte" placeholder="Écrivez ici..." required></textarea>
+        <input
+          type="number"
+          ,
+          name="number"
+          placeholder="Nombre de rot"
+          required
+        />
+        <button type="submit">Encoder</button>
+      </form>
+    </div>
+  </body>
+</html>

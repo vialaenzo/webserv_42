@@ -1,0 +1,155 @@
+/* Styles existants de uploads.css */
+.file-transfer {
+  padding: 20px;
+  text-align: center;
+}
+
+.upload-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 250px;
+  margin-top: 15%;
+  border: #333 1px solid;
+  border-radius: 15px;
+  padding: 35px;
+  width: 50%;
+}
+
+.button {
+  border: none;
+  padding: 1rem 3rem;
+  background-color: #333;
+  border-radius: 15px;
+  font-weight: bold;
+  color: #f0f0f0;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.toggle-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.toggle-label {
+  font-size: 16px;
+  margin: 0 10px;
+}
+
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.upload-mode {
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Styles nécessaires de index.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.title-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.title-link h1 {
+  color: black;
+}
+
+h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+main {
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.button {
+  border: none;
+  padding: 1rem 3rem;
+  background-color: #333;
+  border-radius: 15px;
+  font-weight: semibold;
+  color: #f0f0f0;
+  cursor: pointer;
+}

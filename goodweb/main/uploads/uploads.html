@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upload Files</title>
+    <link rel="stylesheet" href="./uploads.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <img src="../../images/images.png" alt="Logo" class="logo" />
+        <a href="../../index.html" class="title-link">
+          <h1>WEBSERV</h1>
+        </a>
+      </div>
+    </header>
+    <main>
+      <section class="file-transfer">
+        <h2>File Upload</h2>
+        <div class="upload-section">
+          <div class="toggle-container">
+            <span class="toggle-label">Simple Upload</span>
+            <label class="toggle-switch">
+              <input type="checkbox" id="confirmUpload" />
+              <span class="slider"></span>
+            </label>
+            <span class="toggle-label">Advanced Upload</span>
+          </div>
+          <div id="simple-upload" class="upload-mode">
+            <form id="simpleUploadForm" method="post">
+              <label for="fileInput">Select File:</label>
+              <input id="fileInput" type="file" name="file" />
+              <button type="submit" id="upload-button" class="button">
+                Upload File
+              </button>
+            </form>
+          </div>
+          <div id="advanced-upload" class="upload-mode hidden">
+            <form id="advancedUploadForm" method="post">
+              <label for="filenameInput">File Name:</label>
+              <input id="filenameInput" type="text" name="filename" />
+              <label for="contentInput">File Content:</label>
+              <textarea id="contentInput" name="content"></textarea>
+              <button type="submit" id="advanced-upload-button" class="button">
+                Create and Upload File
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./uploads.js"></script>
+  </body>
+</html>

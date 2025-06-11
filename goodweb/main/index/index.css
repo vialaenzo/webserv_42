@@ -1,0 +1,222 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.title-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.title-link h1 {
+  color: black;
+}
+
+h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.github-logo {
+  width: 32px;
+  height: 32px;
+  margin-right: 30px;
+}
+
+.download-container {
+  display: flex;
+}
+
+.download-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 110px;
+  height: 32px;
+  background-color: #5865f2;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  padding: 5px 8px;
+  font-size: 18px;
+  margin-right: 50px;
+  margin-top: -4px;
+}
+
+.download-button:hover {
+  background-color: #43484d;
+}
+
+main {
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.file-list-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  margin-right: 20px;
+  height: fit-content;
+}
+
+.file-list-card .card-title {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+.file-list-card .card-content {
+  background-color: #e0e0e0;
+  height: 300px;
+  border-radius: 4px;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.portfolios {
+  width: 100%;
+}
+
+.portfolios h2,
+.mandatory h2 {
+  font-size: 35px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.portfolios h2 {
+  margin-bottom: 40px;
+}
+
+.portfolio-cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.mandatory-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  width: 300px;
+  padding: 30px;
+  border: 1px solid #000;
+  border-radius: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: #fff;
+}
+
+.card h3,
+.card p {
+  font-weight: bold;
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.card p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #555;
+}
+
+.card button {
+  width: 80%;
+  padding: 10px 16px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.mandatory {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.mandatory h2 {
+  margin-bottom: 20px;
+}
+
+.mandatory img {
+  max-width: 100%;
+  height: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.file-transfer {
+  padding: 20px;
+  text-align: center;
+}
+
+.upload-section,
+.delete-section {
+  margin-bottom: 20px;
+}
+
+.button {
+  border: none;
+  padding: 1rem 3rem;
+  background-color: #333;
+  border-radius: 15px;
+  font-weight: semibold;
+  color: #f0f0f0;
+  cursor: pointer;
+}
